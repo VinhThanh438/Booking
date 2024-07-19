@@ -14,12 +14,4 @@ const ticketSchema = new Schema<ITicket>({
 
 const Ticket = model<ITicket>('Ticket', ticketSchema)
 
-const ticket = new Ticket({
-    ticketName: 'ticket1',
-    price: 100000,
-    quantity: 3
-})
-
-ticket.save()
-
 export default Ticket
